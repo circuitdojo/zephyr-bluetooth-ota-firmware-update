@@ -1,0 +1,26 @@
+manifest:
+  remotes:
+    - name: nrfconnect
+      url-base: https://github.com/nrfconnect
+  projects:
+    - name: nrf
+      repo-path: sdk-nrf
+      remote: nrfconnect
+      revision: v2.5.1
+      import:
+        name-blocklist:
+          - matter
+          - nrf-802154
+          - cjson
+          - openthread
+          - cmock
+          - unity
+          - cddl-gen
+          - homekit
+          - loramac-node
+          - lz4
+          - lvgl
+          - mipi-sys-t
+  self:
+    # This repository should be cloned to
+    path: app
